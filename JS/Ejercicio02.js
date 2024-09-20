@@ -148,6 +148,72 @@ if (numero1===numero5)
     console.log("Se comparo numero1 con numero5, dterminando que tienen el mismo valor. ")
 else
 console.log("Se comparo numero1 con numero5, determinando que tienen el mismo valor pero NO el mismo tipo de dato")
+///
+console.log(`¿Es 5 === Symbol(\"5\") , antes de compararlos utilizamos que tipo de dato son : siendo numero1 del tipo de dato : ${typeof(numero1)} y numero5 del tipo ${typeof(numero8)}?`)
+if (numero1===numero8)
+    console.log("Se comparo numero1 con numero8, dterminando que tienen el mismo valor. ")
+else
+console.log("Se comparo numero1 con numero8, determinando que tienen el mismo valor pero NO el mismo tipo de dato")
+///
+console.log(`¿Es 5 === Symbol(5.0) , antes de compararlos utilizamos que tipo de dato son : siendo numero1 del tipo de dato : ${typeof(numero1)} y numero9 del tipo ${typeof(numero9)}?`)
+if (numero1===numero9)
+    console.log("Se comparo numero1 con numero9, dterminando que tienen el mismo valor. ")
+else
+console.log("Se comparo numero1 con numero9, determinando que tienen el mismo valor pero NO el mismo tipo de dato")
+////
+console.log(`¿Es 5 === Symbol(5) , antes de compararlos utilizamos que tipo de dato son : siendo numero1 del tipo de dato : ${typeof(numero5)} y numero9 del tipo ${typeof(numero6)}?`)
+if (numero5===numero6)
+    console.log("Se comparo numero1 con numero6, dterminando que tienen el mismo valor. ")
+else
+console.log("Se comparo numero5 con numero6,es la condicion symbol lo que lo hace unico ")
+////
+
+// 7. NULL 
+console.warn("Tipo de dato NULL (Nulo o vacio)");
+//El tipo de dato malo se asigna cuando el sistema o el usuario saalen de la variabl pero prefiern dejarlo vacio, bajao su conacentimiento, a diferencia de DEFINED que su valor es desconocido
+
+let nobreUusuario = null;
+let passwordUsuario= null;
+let generoUusuario = null;
+let estatusRelacionSentimental = null;
+let fecha_UltimoPost;
+
+//Supongamos que estqamos  programando un face social, tipo Fcaebook en la que parte de la informacion se publicara en el perfil del usuario 
+//Si el usuario no ha iniciado sesion ene el dispositivo mobiol o en la apliccion we, puede djearcontenido e acceso publico y no existaira informacion para entrar 
+//En la HU que el usuasrio deseee logearse debra ingresar su numero de telefono y un acontraseña 
+//Supongamos que el usuario : Abril con correo electronico aguzm347@gmail desea ingresar con su contraseña 12345
+
+nobreUusuario= "Abril.@gamil.com"
+passwordUsuario="12345"
+
+//en este momento de ejecucion del sisitema no sabemos su genero, ni su estatus de relacion sentimental 
+
+console.log(`El usuario: ${nobreUusuario} esta intentando logearse con una contraseña de ${passwordUsuario}`);
+
+//Lo que prosigue es que el sisitema contrajera los datos ingresado con la base de datos y en caso de que los datos sean correctos comensara la sesion en la plataforma actualizada 
+
+generoUusuario="M"
+estatusRelacionSentimental=null
+
+console.log(`El usuario: ${nobreUusuario}, se ha logeado exitosamente, al tener accesoa  su información de perfil podemos deducir que es del género ${generoUusuario} y que su estatus de relación es ${estatusRelacionSentimental} y su última publicación la realizó el: ${fecha_UltimoPost}`)
+
+//comporando nulll vs undefined
+//undefined y null tienen el mismo valor ,no tienen el m ismo tipo de dato
+console.log("comparacion de la equidad entre undefined y null:");
+
+console.log(
+    fecha_UltimoPost == estatusRelacionSentimental ?
+       "ambas variables tienen el  mismo valor":
+        "las variables no tienen el mismo valor");
+
+console.log("comparacion de la equidad entre undefined y null:");
+
+console.log(fecha_UltimoPost === estatusRelacionSentimental) ?
+"ambas variables tienen el  mismo valor y el mismo dato":
+("las variables  tienen el mismo valor,pero no el mismo dato");
+
+
+
 
 
 
