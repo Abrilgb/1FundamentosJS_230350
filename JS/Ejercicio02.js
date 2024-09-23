@@ -213,7 +213,13 @@ console.log(fecha_UltimoPost === estatusRelacionSentimental) ?
 ("las variables  tienen el mismo valor,pero no el mismo dato");
 
 
-
+console.warn("--- tipo de dato Function (funcion)")
+//Declaramos una funcion que nos permita recibir un parametro en este caso el  nombre de la persona a saludar , y le enviamos un saludo a esta funcion la asignamos a una constaante
+const saludar =function(nombre){return `Hola , ${nombre}!`}
+//invocamos a la funcion declarada 
+console.log(saludar('marco'));
+//y que tipo de dato tiene esta constante
+console.log(`el tipo de dato saludar es ${typeof(saludar)}`)
 
 
 
