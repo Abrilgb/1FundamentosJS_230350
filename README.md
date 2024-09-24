@@ -7,10 +7,12 @@ Previo a iniciar el desarrollo de software para web usando el framework de NodeJ
 
 ### Historial de practicas
 
-|No.| Descripcion| Estado
-|---|---|---|
-|1.| Metodologia de Evaluacion| Finalizacion ✅ |
-|2.| Inicializacion del Proyecto Fundamentos de JS| Activa|
+|No.| Descripcion|Potenciador| Estatus
+|---|---|---|---|
+|1.| Metodologia de Evaluacion|1| Finalizacion ✅ |
+|2.| Inicializacion del Proyecto Fundamentos de JS|8|✅ Finalizada|
+|3.|Ejercicio 01: Declaracion de avriables|6|✅Finalizada|
+|4.|Ejercicio02: Tipos de Datos (Undefined, Boolean, Number, String, BigInt, Sybbol, Null, Function)|10|✅Finalizada|
 
 ### Autor 
 Abril Guzman Brrera
