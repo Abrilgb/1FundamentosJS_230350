@@ -8,7 +8,7 @@ border-radius: 6px; padding: 4px: font-size: 1.0rem; font-weight: bold`
 console.warn("Practica 05 repaso de Objetos en JvaScript");
 
 //VARIABLES INDEPENDIENTES 
-console.log("%c1.- Variables Independientes", style_console);
+        console.log("%c1.- Variables Independientes", style_console);
 
 //Declaramos valores independientes relacionados a un producto 
 
