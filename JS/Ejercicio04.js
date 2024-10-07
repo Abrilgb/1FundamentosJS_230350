@@ -144,6 +144,67 @@ console.log(`El septimo signo zodiacal es: ${signo7}`)
 //Congelamos el arreglo volviendo INMUTABLE 
 Objeto.freeze(signosZodiacales);
 
+//Filtrado de datos 
+console.log("%c11.- Fitrado de elemto dentro de un arreglo (FILTER) ", style_console);
+console.table(estudiantes)
+//antes de filtrara datos tenemos el arreglo con dies elementos 
+estudiantes.push("Angel Rufino");
+estudiantes.push("Esther Gonzales");
+estudiantes.push("Lorena Galindo");
+estudiantes.push("Jonathan Ramirez");
+estudiantes.push("Angel Rufino");
+estudiantes.push("Ailton Airtiaga");
+estudiantes.push("Tania Ibarra ");
+console.table(estudiantes);
+
+Object.freeze(estudiantes)
+//es un metodo que recorre los elemetos de un arreglo haciendo alguna tarea en especifico, lo que temos que considerara es que este nuevo arreglo resultante e su objeto muevo que puede ser mutable
+console.log("Filtrando los primeros cinco elemetos");
+let nuevoEstudiantes = estudientes.filter(estudiantes, num => num>5);
+console.table(nuevoEstudiantes) 
+
+//filtarar a los estudinates que su nombre tenga mas de 15 caracteres 
+let nuevoEstudiantes1 = estudientes.filter(estudiantes,index (index => 10));
+console.table(nuevoEstudiantes) 
+
+
+
+
+//intentamos modificar el arreglo inmutabole 
+//estudiantes.pop();
+//console.table(estudiantes);
+
+
+//intentamos modifixcar el nuevo arreglo que no a sido congelado 
+nuevoEstudiantes.unshift("Diego Tecorralco");
+console.table(nuevoEstudiantes);
+
+function filtrarprimeros5(estudiantes){
+    let  listaFiltrada
+    for (let i=0;i<0;i++){
+        listaFiltrada(pushestudiente[i]);
+    }
+    return listaFiltrada;
+}
+
+//filtrado de datos
+
+console.log("%c12.- Filtrado de elementos de un arreglo utilizando el mertdodo map en el que necesitamos transformarlos ", style_console);
+console.log("Imprimirmos los elementos acatuales de Zignos sodiacales ")
+consolew.table(signosZodiacales);
+
+//
+
+console.table(signosZodiacales.map(signoZodiacal=>signoZodiacal.toUpperCase()));
+//Redujiendo eleemtos de un arreglo, se usa cuando se debe hacer operaciones automaticas o cuantitaticvas a aun arreglo, como optener totales, reducir la lista mas simplificada 
+
+const costosListaCompra=[15,52,16.90, 32.50,28,105,45.294,10]
+//Como podemos calcular un lista de costos de un carritp de cp,pras 
+console.log("Los precios son : ");
+console.table(costosListaCompra);
+console.log(`El total de la compra es: ${costosListaCompra.reduce(total,precio=> total,precio, 0 ).toFixed(2)}`);
+
+
 
 
 
