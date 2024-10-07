@@ -13,7 +13,7 @@ Previo a iniciar el desarrollo de software para web usando el framework de NodeJ
 |2.| Inicializacion del Proyecto Fundamentos de JS|8|✅ Finalizada|
 |3.|Ejercicio 01: Declaracion de avriables|6|✅Finalizada|
 |4.|Ejercicio02: Tipos de Datos (Undefined, Boolean, Number, String, BigInt, Sybbol, Null, Function)|10|✅Finalizada|
-|5.|Ejercicio03: Repaso de objetos (Variables Independientes, Objetos, Destructuracion de Objetos,Actualizacion, Eliminacion y Agregacion de los valores de las propiedadezs de un objeto,Mutabilidad y inmutabilidad, Assing  y desestructuracion )|8|✅Finalizada|
+|5.|Ejercicio03: Repaso de objetos (Variables Independientes, Objetos, Destructuracion de Objetos,Actualizacion, Eliminacion y Agregacion de los valores de las propiedadezs de un objeto,Mutabilidad y inmutabilidad, Assing  y desestructuracion )|19|✅Finalizada|
 
 ### Autor 
 Abril Guzman Brrera

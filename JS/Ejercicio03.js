@@ -8,7 +8,7 @@ border-radius: 6px; padding: 4px: font-size: 1.0rem; font-weight: bold`
 console.warn("Practica 05 repaso de Objetos en JvaScript");
 
 //VARIABLES INDEPENDIENTES 
-console.log("%c1.- Variables Independientes", style_console);
+        console.log("%c1.- Variables Independientes", style_console);
 
 //Declaramos valores independientes relacionados a un producto 
 
@@ -53,7 +53,7 @@ let Producto =
     Precio: "3361.25",
     Disponibilidad:false,
     Stock: 0,
-    Imagen:".../Aseets/products/sneakers/JORDAN.png",
+    Imagen:"Aseets/products/sneakers/JORDAN.png",
     SKU: "DZ5485-612",
     Barcode:null,
     Categorias: ["Deportes", "Tenis", "Juvenil"]
@@ -86,7 +86,7 @@ let Producto2 =
     Precio: "3361.25",
     Disponibilidad:true,
     Stock: 5,
-    Imagen: ".../Aseets/products/sungalsses/KatoRed.png",
+    Imagen: "Aseets/products/sungalsses/KatoRed.png",
     SKU: "009481D-0356",
     Barcode:888392491626,
     Categorias: ["Deportes", "Lentes", "Hombre", "Accesorios"]
