@@ -263,3 +263,110 @@ while (j < dias.length ) {
     j++;
 }
 
+console.log("%c8.- Ciclo de condicionales, que se ejecuta al menos una vez - (DO-WHILE)",style_console);
+
+let episodios =[
+    "Episodio 1 : Solo nos vemos en bodas  ",
+    "Episodio 2 : Corre, chico corre",
+    "Episodio 3 : Extraordinary love",
+    "Episodio 4 : Number five ",
+    "Episodio 5 : The day that wasent",
+    "Episodio 6 :I heard a rumor ",
+    "Episodio 7 :The day that i was ",
+    "Episodio 8 : Man on the moon ",
+    "Episodio 9 : Changes",
+    "Episodio 10 : The white violin"
+];
+
+let indice =0; 
+let continuarViendo = true;
+
+do {
+    console.log(`Reproduciendo ${episodios[indice]}`);
+    //Simulamos la reproduccion del episodio
+    indice ++;
+
+    //Simulamos un apregunta 
+
+    if(indice<episodios.length){
+        continuarViendo=confirm("Deseas continuar viendo el siguiente episodio?");
+    }else{
+        continuarViendo=false;
+    }
+}while(continuarViendo && indice< episodios.length);
+
+console.log("Fin de reproduccion");
+
+console.log("%c9.- ciclos para corre elementos finitos (FOR ... OF)",style_console);
+
+let seriesTrending = [
+    {nombre: "Heartstoper",tempporadas : 3, TotalViewers: "1.5M", totalReproducidos: "1.0M"},
+    {nombre: "Jovenes Altesas ",tempporadas : 4, TotalViewers: "1.5M", totalReproducidos: "1.0M"},
+    {nombre: "  Sex Education",tempporadas : 4, TotalViewers: "2.5M", totalReproducidos: "3.0M"},
+    {nombre: "The humbrella Acdemy",tempporadas : 4, TotalViewers: "1.9M", totalReproducidos: "2.0M"},
+    {nombre: "The witcher",tempporadas : 3, TotalViewers: "1.0M", totalReproducidos: "1.0M"},
+];
+
+//usando for ...of
+for (let serie of seriesTrending){
+    console.log(`Serie: ${serie.nombre}, Temporada:${serie.tempporadas}`);
+}
+try{
+    console.log(`La ultima serie leida fue : ${serie.nombre}`);//No va a funcionar por la variable serie ya no existe ya que su alcanse estuvo durante el ciclo
+}
+catch(error){
+    console.log("Mensaje error : "+ error.mensaje)
+}
+
+console.log("%c10.- ciclos para recorrer las propiedades de elemento finitos - (FOR...IN)",style_console);
+
+for (let i in seriesTrending){
+    console.log(`Serie ${parseInt(i)+1}:`);
+    for (let propiedad in seriesTrending[i]){
+        console.log(`${propiedad}: ${seriesTrending[i][propiedad]}`);
+    }
+    console.log(`-----------------`);
+}
+
+console.log("%c11.- Ciclos interrumpidos para cada uno de los elementos del arreglo (FOR EACH)",style_console);
+
+let SeriesTrending2 = [
+    {nombre: "Heartstoper",tempporadas : 3, viewers: "20000000", reproducciones: "500000"},
+    {nombre: "Jovenes altesas",tempporadas : 4, viewers: "1000000", reproducciones: "20000000"},
+    {nombre: "  Sex Education",tempporadas : 6, viewers: "8000000", reproducciones: "3000000"},
+    {nombre: "The humbrella Acdemy",tempporadas : 4, viewers: "9000000", reproducciones: "3000000"},
+    {nombre: "The witcher",tempporadas : 3, viewers: "80000000000", reproducciones: "2000000"}
+];
+
+//usando for Each para recorrer cada serie y calcuilar la calificacion 
+SeriesTrending2.forEach((serie, index)=>{
+
+    let calificacion=(serie.reproducciones/serie.viewers).toFixed(2);
+
+    //calcula la calificacion y a dos decimales 
+
+    console.log(`Serie ${index + 1}:`);
+
+    console.log(`Nombre ${index.nombre}:`);
+
+    console.log(`Temporadas ${index.tempporadas}:`);
+
+    console.log(`Viewers ${index.viewers}:`);
+
+    console.log(`Reproducciones ${index.reproducciones}:`);
+
+    console.log(`serie ${calificacion}:`);
+    
+    console.log(`---------------------`)
+});
+
+console.log("%c12.- FILTER o MAP ",style_console);
+
+let seriesDeseadas =["Heartstoper", "Jovenes Altesas", "Sex Education"];
+let seriesConTresTemporadas =SeriesTrending2
+  .filter(serie => serie.tempporadas <= 3)
+  .map(serie=> serie.nombre)
+  .filter(nombre=> seriesDeseadas.includes(nombre));
+
+  console.log("Series con tres temporadas que estan en la lista deseada : ");
+  console.log(seriesConTresTemporadas);
